@@ -1,1 +1,93 @@
-<!doctype html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width,shrink-to-fit=0,user-scalable=no,minimum-scale=1,maximum-scale=1"><title>2021.12.12-14.36.33.js</title><style>html{width:100%;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column}body{width:100%;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:row;margin:0}canvas{margin:auto;display:block;box-shadow:0 2px 12px -2px rgba(0,0,0,.15)}</style><body><script src=2021.12.12-14.36.33.js></script>
+<!doctype html>
+<html lang=en>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,shrink-to-fit=0,user-scalable=no,minimum-scale=1,maximum-scale=1">
+<title>2021.12.12-14.36.33.js</title>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+  integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+<style>
+  html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0
+  }
+
+  canvas {
+    margin: auto;
+    display: block;
+    box-shadow: 0 2px 12px -2px rgba(0, 0, 0, .15)
+  }
+</style>
+
+<body>
+  <script src=2021.12.12-14.36.33.js></script>
+  <div class="z-10 absolute right-10 bottom-10">
+    <a href="https://twitter.com/Linzellart" target="_blank" rel="noopener noreferrer">
+      <button id="twitter"
+        class="bg-white  transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-blue-400 border-blue-400 hover:bg-blue-400 hover:text-white text-2xl">
+        <i class="fab fa-twitter"></i>
+      </button>
+    </a>
+    <a href="https://www.linkedin.com/in/charlie-cohen-47b241a2/" target="_blank" rel="noopener noreferrer">
+      <button id="linkedin"
+        class="bg-white transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-blue-500 border-blue-500  hover:bg-blue-500 hover:text-white text-2xl">
+        <i class="fab fa-linkedin-in"></i>
+      </button>
+    </a>
+    <a href="https://github.com/Linzell" target="_blank" rel="noopener noreferrer">
+      <button id="github"
+        class="bg-white transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-gray-800 border-gray-800  hover:bg-gray-800 hover:text-white text-2xl">
+        <i class="fab fa-github"></i>
+      </button>
+    </a>
+    <a href="mailto:linzellart@gmail.com" target="_blank" rel="noopener noreferrer">
+      <button id="mail"
+        class="bg-white transform hover:-translate-y-3  border-2 w-12 h-12 rounded-full duration-500 text-gray-800 border-gray-800  hover:bg-gray-800 hover:text-white text-2xl">
+        <i class="fa fa-envelope"></i>
+      </button>
+    </a>
+    <script>
+      tippy('#twitter', {
+        content: 'Twitter',
+        animation: 'fade',
+        delay: [200, 200]
+      });
+      tippy('#linkedin', {
+        content: 'Linkedin',
+        animation: 'fade',
+        placement: 'top',
+        delay: [200, 200]
+      });
+      tippy('#github', {
+        content: 'Github',
+        animation: 'fade',
+        placement: 'top',
+        delay: [200, 200]
+      });
+      tippy('#envelope', {
+        content: 'Envelope',
+        animation: 'fade',
+        placement: 'top',
+        delay: [200, 200]
+      });
+    </script>
+  </div>
+</body>
+
+</html>
